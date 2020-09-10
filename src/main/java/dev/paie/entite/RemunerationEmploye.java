@@ -1,12 +1,38 @@
 package dev.paie.entite;
 
+import java.util.Set;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+
+@Entity
+@Table(name="remuneration_employe")
 public class RemunerationEmploye {
 	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	private String matricule;
+	
+	@ManyToOne
 	private Entreprise entreprise;
+	
+	@ManyToOne
 	private ProfilRemuneration profilRemuneration;
+	
+	@ManyToOne
 	private Grade grade;
+	
+	//@OneToMany
+	//(mappedBy="remuneration_employe")
+	//private Set<BulletinSalaire>bulletinSalaire;
+	
 	
 	public String getMatricule() {
 		return matricule;
