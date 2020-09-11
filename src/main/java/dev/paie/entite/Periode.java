@@ -29,8 +29,7 @@ public class Periode {
 	//@OneToMany(mappedBy="periode")
 	//private Set<BulletinSalaire>produits;
 	
-	
-	
+		
 	public LocalDate getDateDebut() {
 		return dateDebut;
 	}
