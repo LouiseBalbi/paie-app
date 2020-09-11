@@ -7,15 +7,14 @@ import java.util.Optional;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-
+import dev.paie.entite.BulletinSalaire;
 import dev.paie.entite.Employe;
 import dev.paie.entite.Entreprise;
 import dev.paie.entite.Grade;
 import dev.paie.entite.ProfilRemuneration;
 import dev.paie.exception.PaieException;
 import dev.paie.repository.EmployeRepository;
-import dev.paie.repository.EntrepriseRepository;
-import dev.paie.repository.GradeRepository;
+
 
 @Service
 public class EmployeService {
@@ -46,8 +45,6 @@ public class EmployeService {
 		if (!opEntreprise.isPresent() || !opProfil.isPresent() || !opGrade.isPresent()) {
 			messagesErreurs.add("Les données ne sont pas correctes");
 		}
-
-
 
 
 		if (!messagesErreurs.isEmpty()) {

@@ -11,14 +11,6 @@ public class CreerEmployeRequestDto {
 	@NotNull
 	protected String matricule;
 	
-//	@NotNull
-//	private Entreprise entreprise;
-//	
-//	@NotNull
-//	private ProfilRemuneration profil;
-//	
-//	@NotNull
-//	private Grade grade;
 	
 	
 	@NotNull

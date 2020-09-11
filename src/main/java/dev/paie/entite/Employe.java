@@ -1,9 +1,13 @@
 package dev.paie.entite;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 
 @Entity
@@ -22,6 +26,9 @@ public class Employe {
 	
 	@ManyToOne
 	private Grade grade;
+	
+//	@ManyToMany
+//	List<BulletinSalaire> listeBulletins = new ArrayList<>();
 
 	/**
 	 * @return the id
