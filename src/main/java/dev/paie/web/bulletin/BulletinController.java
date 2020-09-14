@@ -3,6 +3,7 @@ package dev.paie.web.bulletin;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
@@ -74,6 +75,9 @@ public class BulletinController {
 		}
 
 	}
+	
+	
+
 	
 	@ExceptionHandler(PaieException.class)
 	public ResponseEntity<List<String>> onPaieException(PaieException ex) {

@@ -75,5 +75,10 @@ public BulletinSalaireService(BulletinSalaireRepository bulletinRepo, PeriodeSer
 
 		return BulletinRepo.save(bull);
 	}
+	
+	public Optional<BulletinSalaire> recupererBulletin(Integer id){
+		return this.BulletinRepo.findById(id);
+	}
+
 
 }
