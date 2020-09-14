@@ -17,7 +17,7 @@ import dev.paie.service.EmployeService;
 
 
 @RestController
-@RequestMapping("employe")
+@RequestMapping("employes")
 public class EmployeController {
 	
 	private EmployeService employeService;
