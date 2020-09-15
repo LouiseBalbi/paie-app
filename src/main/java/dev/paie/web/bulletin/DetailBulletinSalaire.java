@@ -1,5 +1,6 @@
 package dev.paie.web.bulletin;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import dev.paie.entite.BulletinSalaire;
@@ -14,9 +15,9 @@ public class DetailBulletinSalaire {
 	private String matricule;
 	private double salaireBase;
 	private double primeExceptionnelle;
-	private List<Cotisation> cotisationsNonImposables;
+	private List<Cotisation> cotisationsNonImposables = new ArrayList<>();
 	private double netImposable;
-	private List<Cotisation> cotisationsImposables;
+	private List<Cotisation> cotisationsImposables = new ArrayList<>();
 	private double netAPayer;
 	
 	
